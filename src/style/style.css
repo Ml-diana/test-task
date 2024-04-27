@@ -1,0 +1,59 @@
+.layout {
+    padding-right: 130px;
+    padding-left: 130px;
+    margin-left: auto;
+    margin-right: auto ;
+    background-color: white;
+}
+
+.header {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.spin-wrapper {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.list {
+    margin-top: 50px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-left: 5px;
+}
+
+.price-box-wrapper {
+    display: flex;
+}
+
+.price-wrapper {
+    display: flex;
+}
+
+.price {
+    margin-left: 5px;
+}
+
+.title-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.card-title {
+    margin: 10px;
+}
+.footer {
+display: flex;
+justify-content: center;
+width: 100%;
+position: absolute;
+left: 0;
+bottom: 0;
+}

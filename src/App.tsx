@@ -1,10 +1,20 @@
 import React from 'react';
-
-import './App.css';
+import ProductsPage from './productsPage/productsPage';
+import { Layout, Typography } from 'antd';
+import { Footer, Header } from 'antd/es/layout/layout';
+import  './style/style.css';
 
 function App() {
-  return (
-    <></>
+  const currentDate = new Date();
+
+  return  (
+    <Layout className='layout'>
+      <Header>
+        <Typography className='header'>Online Shop</Typography>
+      </Header>
+      <ProductsPage />
+      <Footer className='footer'>© Online Shop {currentDate.getFullYear()}</Footer>
+    </Layout>
   );
 }
 
