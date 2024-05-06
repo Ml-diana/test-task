@@ -1,8 +1,9 @@
-import { List, Spin } from 'antd';
+import { List } from 'antd';
 import ProductCard from '../productCard/productCard';
 import { useEffect, useState } from 'react';
 import { ProductsType } from '../types/types';
 import { fetchImitate } from '../service/loadData';
+import Loading from '../loading/loading';
 
 const ProductsPage = () => {
     const [productsData, setProductsData] = useState<ProductsType[]>([]);
@@ -17,13 +18,7 @@ const ProductsPage = () => {
     }, []);
 
     if (isLoading) {
-        return (
-            <div className='spin-wrapper'>
-                <Spin tip="Loading" size="large" >
-                    <div className="content" />
-                </Spin>
-            </div>
-        );
+        return <Loading />;
     };
 
     return (

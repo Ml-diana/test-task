@@ -13,7 +13,7 @@ function App() {
         <Typography className='header'>Online Shop</Typography>
       </Header>
       <ProductsPage />
-      <Footer className='footer'>© Online Shop {currentDate.getFullYear()}</Footer>
+      <Footer>© Online Shop {currentDate.getFullYear()}</Footer>
     </Layout>
   );
 }
